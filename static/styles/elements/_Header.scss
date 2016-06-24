@@ -1,0 +1,16 @@
+.Header {
+  border-radius: 2px;
+  background-color: #F44336;
+  //background-image: linear-gradient(hsla(4, 90, 58, 1),hsla(4, 90, 58, 1));
+  background-position: center;
+  background-size: cover;
+  border-bottom: 1px solid #D32F2F;
+    .header-content {
+        width: 100%;
+        max-width: 980px;
+        margin: auto;
+        padding: 64px 16px;
+        overflow: auto;
+        height: 30rem;
+    }
+}

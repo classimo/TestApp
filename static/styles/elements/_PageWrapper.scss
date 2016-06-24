@@ -1,0 +1,21 @@
+.PageWrapper{
+    width: 100%;
+    min-height: 100%;
+    border-top: 47px solid white;
+    border-left: 47px solid white;
+    border-right: 47px solid white;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+@media (max-width: 700px) {
+    .PageWrapper {
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+    }
+    .PageWrapper > .nav {
+        display: none;
+    }
+}

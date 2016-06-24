@@ -1,4 +1,5 @@
 import React, { PropTypes, Component } from 'react';
+import {Container, Row, Column, Block} from 'react-bootstrap-grid';
 import PostListView from '../PostListView/PostListView';
 import PostCreateView from '../../components/PostCreateView/PostCreateView';
 import Header from '../../components/Header/Header';
@@ -41,11 +42,9 @@ class PostContainer extends Component {
     return (
       <div>
         <Header onClick={this.handleClick} />
-        <div className="container">
-          <PostCreateView addPost={this.add}
-            showAddPost={this.state.showAddPost}/>
-          <PostListView posts={this.props.posts}/>
-        </div>
+        <Container fluid={ true }>
+
+        </Container>
         <Footer />
       </div>
     );

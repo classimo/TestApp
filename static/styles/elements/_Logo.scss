@@ -1,0 +1,74 @@
+.Logo{
+  position: absolute;
+  top: -45px;
+  left: 0;
+  right: 0;
+
+  .logo-svg{
+    display: block;
+    margin: 0 auto;
+    background-color: #FEFEFE;
+    border-radius: 100%;
+    max-width: 100px;
+    max-height: 100px;
+    webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    .fil1 {
+      fill:#FEFEFE;
+      fill-rule:nonzero
+    }
+    .fil4 {
+      fill:#373435;
+      fill-rule:nonzero
+    }
+    .fil2 {
+      fill:#FEFEFE;
+      fill-rule:nonzero
+    }
+    .fil3 {
+      fill:#FEFEFE;
+      fill-rule:nonzero
+    }
+    .fil0 {
+      fill:#373435;
+      fill-rule:nonzero
+    }
+    .inner {fill:#373435;fill-rule:nonzero}
+    .inner-group {
+
+
+    }
+    &:hover{
+      .rotate{
+        -webkit-transform: rotate3d(800,800,0,359deg);
+        -moz-transform: rotate3d(800,800,0,359deg);
+        -o-transform: rotate3d(800,800,0,359deg);
+        -ms-transform: rotate3d(800,800,0,359deg);
+        transform: rotate3d(800,800,0,359deg);
+        -webkit-transition: 1s ease-in;
+        -moz-transition: 1s ease-in;
+        -o-transition: 1s ease-in;
+        transition: 1s ease-in;
+      }
+      max-width: 105px;
+      max-height: 105px;
+      box-shadow: 0 1.5px 15px 4.5px rgba(0,0,0,.46);
+      -webkit-transition: .2s ease-in-out;
+      -moz-transition: .2s ease-in-out;
+      -o-transition: .2s ease-in-out;
+      transition: .2s ease-in-out;
+    }
+    &:active{
+      -webkit-transition: .2s ease-in-out;
+      -moz-transition: .2s ease-in-out;
+      -o-transition: .2s ease-in-out;
+      transition: .2s ease-in-out;
+      box-shadow: 0 3px 10px 1px rgba(0,0,0,.48);
+      max-width: 100px;
+      max-height: 100px;
+    }
+  }
+}
+

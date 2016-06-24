@@ -1,20 +1,24 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
+import PageWrapper from '../PageWrapper/PageWrapper';
+import Logo from '../Logo/Logo';
 
 function Header(props, context) {
   return (
-    <div className="header">
-      <div className="header-content">
-        <h1 className="site-title">
-          <Link to="/" onClick={props.handleLogoClick}>MERN Starter Blog</Link>
-        </h1>
-        {
-          context.router.isActive('/', true)
-            ? <a className="add-post-button" href="#" onClick={props.onClick}>Add Post</a>
-            : null
-        }
+    <PageWrapper>
+      <Link to="/" className="Logo">
+        {/*<img className="z-depth2" src="/img/vovlogsv.svg" alt="FC Vova" width="100" height="100"/> */}
+        <Logo className="z-depth2"/>
+      </Link>
+      <div className="Header z-depth1">
+        <div className="header-content">
+          <h1 className="site-title">
+            {/* <Link to="/" onClick={props.handleLogoClick}>Title</Link> */}
+          </h1>
+
+        </div>
       </div>
-    </div>
+    </PageWrapper>
   );
 }
 
@@ -28,3 +32,8 @@ Header.propTypes = {
 };
 
 export default Header;
+/*{
+ context.router.isActive('/', true)
+ ? <a className="add-post-button" href="#" onClick={props.onClick}>Add Post</a>
+ : null
+ }*/

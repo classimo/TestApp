@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 function PostListItem(props) {
   return (
-    <div className="single-post">
+    <div className="SinglePost">
       <h3 className="post-title ">
         <Link to={`/post/${props.post.slug}-${props.post.cuid}`} onClick={props.onClick}>
           {props.post.title}
